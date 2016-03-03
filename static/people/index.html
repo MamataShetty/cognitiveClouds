@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="google-site-verification" content="JdlkgSU9kQfKat08YgfmdLFMOyYpA2ROG9rt9FCglGM" />
+
+<title>
+
+  Cognitive Clouds
+
+</title>
+
+<!-- Main CSS -->
+<link href="/css/main-b0cae359.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="/js/html5shiv-8b3747c5.js"></script>
+  <script src="/js/respond/respond.min-88c91176.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed-c58ca0ec.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed-80e457bf.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed-1406a57c.png">
+<link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed-6a99f440.png">
+<link rel="shortcut icon" href="/ico/favicon-c3a7ec1c.png">
+<script src="/js/modernizr.custom.97074-351ad250.js"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-37831194-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+ var ga = document.createElement('script');
+ ga.type = 'text/javascript';
+ ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0];
+ s.parentNode.insertBefore(ga, s);
+ })();
+</script>
+<style>
+  
+.og-grid {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.og-grid li {
+  display: inline-block;
+  margin: 10px 5px 0 5px;
+  vertical-align: top;
+  height: 310px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.og-grid li > a > img {
+  width: 220px;
+}
+.og-grid li > a > h4 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: rgb(51, 51, 51);
+}
+.og-grid li > a > p {
+    font-size: 12px;
+    max-width: 220px;
+    min-height: 42px;
+}
+
+.og-grid li > a,
+.og-grid li > a img {
+  border: none;
+  outline: none;
+  display: block;
+  position: relative;
+}
+
+.og-grid li.og-expanded > a::after {
+  top: auto;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #ddd;
+  border-width: 15px;
+  left: 50%;
+  margin: -20px 0 0 -15px;
+}
+
+.og-expander {
+  position: absolute;
+  background: #ddd;
+  top: auto;
+  left: 0;
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+  height: 0;
+  overflow: hidden;
+}
+
+.og-expander-inner {
+  padding: 50px 30px;
+  height: 100%;
+}
+
+.og-close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.og-close::before,
+.og-close::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: 1px;
+  background: #888;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.og-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.og-close:hover::before,
+.og-close:hover::after {
+  background: #333;
+}
+
+.og-fullimg,
+.og-details {
+  width: 50%;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.og-details {
+  padding: 0 40px 0 20px;
+}
+
+.og-fullimg {
+  text-align: center;
+}
+
+.og-fullimg img {
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.og-details h3 {
+  font-weight: 300;
+  font-size: 40px;
+  padding: 40px 0 10px;
+  margin-bottom: 10px;
+}
+
+.og-details p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #999;
+}
+
+.og-details a {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border: 3px solid #333;
+  display: inline-block;
+  margin: 30px 0 0;
+  outline: none;
+  display: none;
+}
+
+.og-details a::before {
+  content: '\2192';
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.og-details a:hover {
+  border-color: #999;
+  color: #999;
+}
+
+.og-loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ddd;
+  box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  -webkit-animation: loader 0.5s infinite ease-in-out both;
+  -moz-animation: loader 0.5s infinite ease-in-out both;
+  animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+  0% { background: #ddd; }
+  33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+  66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@-moz-keyframes loader {
+  0% { background: #ddd; }
+  33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+  66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@keyframes loader {
+  0% { background: #ddd; }
+  33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+  66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@media screen and (max-width: 830px) {
+
+  .og-expander h3 { font-size: 32px; }
+  .og-expander p { font-size: 13px; }
+  .og-expander a { font-size: 12px; }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .og-fullimg { display: none; }
+  .og-details { float: none; width: 100%; }
+  
+}
+
+</style>
+</head>
+<script type="application/ld+json">
+// JSON-LD markup generated by Google Structured Data Markup Helper.
+[{
+    "@context": "schema.org",
+    "@type": "LocalBusiness",
+    "url": "http://www.cognitiveclouds.com/expertise/"
+}, {
+    "@context": "schema.org",
+    "@type": "LocalBusiness",
+    "url": "http://www.cognitiveclouds.com/services/"
+}, {
+    "@context": "schema.org",
+    "@type": "LocalBusiness",
+    "url": "http://www.cognitiveclouds.com/methods/"
+}, {
+    "@context": "schema.org",
+    "@type": "LocalBusiness",
+    "url": "http://www.cognitiveclouds.com/people/"
+}, {
+    "@context": "schema.org",
+    "@type": "LocalBusiness",
+    "url": "http://www.cognitiveclouds.com/contact/"
+}]
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KPF6BB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KPF6BB');</script>
+<!-- End Google Tag Manager -->
+
+<body>    
+<div id="page-wrap">
+  <div class="navbar navbar-fixed-top">
+    <!-- <div class="container"> -->
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="menu-text">MENU</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand text-hide" href="/">
+      <!-- <img src="/img/h/logo.png" alt="CognitiveClouds"> -->
+    </a>
+    <div class="nav-collapse collaps clearfix collapse">
+      <ul class="nav pull-right">
+        <li  ><a href="/expertise/">Expertise</a>
+        </li>
+        <li  ><a href="/services/">Services</a>
+        </li>
+        <li  ><a href="/methods/">Methods</a>
+        </li>
+<!--         <li  ><a href="/stories/">Stories</a>
+        </li> -->
+        <li  class="active"><a href="/people/">People</a>
+        </li>
+        <li  ><a href="/contact/">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+    <!-- </div> -->
+  </div>
+  <div id="page-content" class="services people">
+  <!-- Place anything custom after this. -->
+
+  <!-- Page content of course! -->
+  <div class="sevices-banner pbg">
+    <div class="container">
+      <h1>Work With Our Talented People</h1>
+      <p class="h1-lead">
+      Our business is people, so we hire the best people who solve hard problems on tight timelines.
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-span-12">
+        <h2 class="text-center light smaller mt-25">Vision</h2>
+        <p class="text-center h2-lead">CognitiveClouds fundamentally changes how the sourcing industry works by providing transparent communications from a globally distributed team of innovators, thought leaders, technical masterminds and product visionaries. Our process and tools ensure we meet your budgetary and time constraints while delivering the right product to your stakeholders and customers.</p>
+      </div>
+    </div>
+
+    <div class="row pt-30">
+      <div class="col-span-6">
+
+        <p>We craft smart applications for your smart organization. From enterprise grade cloud applications to remarkable mobile apps, we make intelligent software products your customers love. As a partner, our success depends upon your success, so we share our best ideas with you to ensure you meet your business goals.</p>
+
+        <p>For the past couple decades, our core team executed and managed products like yours at companies including IBM Watson Research, Oracle, Sybase, Cisco, Yahoo and Flip Video. We are a scrappy startup team, but our network is hundreds strong, allowing us to scale to deliver any product no matter the scope or deadline.</p>
+      </div>
+      <div class="col-span-6">
+        <p>We employ an agile product development methodology to craft robust software products. Products we build are always production-ready, which means you can base your decision to go live on business factors and not technical ones. With a relentless focus on application speed, bug-free code, and offline optimization, we use modern technologies to engineer cloud back-ends, responsive websites and mobile applications.</p>
+
+        <p>New products and ideas keep our team excited and are the lifeblood of our company. We’re looking forward to learning more about how we can help you innovate.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row row-grid">
+        <div class="col-span-12">
+          <br>
+          <hr class="dotted uneven-spacing">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-span-12">
+        <h2 class="text-center light smaller mt-25">Culture</h2>
+        <p class="text-center h2-lead">Our open culture drives our success, attracting and retaining the most sought after people and clients because great company culture delivers on promises of innovation.</p>
+      </div>
+    </div>
+
+    <div class="row pt-30">
+      <div class="col-span-6">
+        <p>CognitiveClouds is built on an open culture foundation where opinion and feedback has equal value regardless of source, title or seniority. A no-nonsense company, our community of brilliant thinkers and doers value each other’s thoughts, which drive the products and processes of tomorrow.</p>
+        <p>Improvements to process roll out upon validation and we place equal value on ideas from new assistants to seasoned engineers because we believe working smarter gives us time to innovate and do our best work. Regular company updates focus on transparent communication about what’s happening, where we’re headed and why.</p>
+      </div>
+      <div class="col-span-6">
+        <p>We bring the San Francisco software startup culture to India and abroad by allowing small talented teams to accomplish big things. While we have creative office space and free lunch, we don’t define culture that way. Culture is about positive interactions and providing the right environment to allow talented people to grow, pushing the limits of interaction design and technology.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row row-grid">
+        <div class="col-span-12">
+          <br>
+          <hr class="dotted uneven-spacing">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-span-12">
+        <h2 class="text-center light smaller mt-25">Leadership</h2>
+        <p class="text-center h2-lead">Our leadership team has decades of combined experience at startups and enterprises, delivering professional services and software products.</p>
+      </div>
+      <div class="row">
+      </div>
+
+      <div class="container leadership">
+        <ul id="og-grid" class="og-grid">
+          <li>
+            <a href="#" data-largesrc="/img/pc/pras.png" data-title="Prasanna Gopinath" data-description="Prasanna has over 20 years of experience and held engineering leadership positions at companies like Sybase, Oracle, Cisco and Flip Video. Prasanna was a researcher at IBM TJ Watson Research in New York conducting video encoding algorithms. He led several product initiatives and product development at Sybase, Oracle, Cisco and LignUp. He co-founded eJunction and FonSquare. Most recently he served as Chief Technology Officer of Sourcebits, a Sequoia funded mobile development company. Prasanna founded CoginitiveClouds with the vision that there needed a new generation services company that helped customers address fast pace technology disruption that is happening in the industry by building innovative, world class products by partnering with enterprises and startups and provided on-budget, on-time and high quality product development. Prasanna holds a Masters in Computer Science.">
+              <img src="/img/pc/pras.png" alt="Prasanna Gopinath"/>
+              <h4>Prasanna Gopinath</h4>
+              <p>Founder, Chief Executive Officer</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-largesrc="/img/pc/ben.png" data-title="Ben Obear" data-description="Ben is responsible for generating new business and maintaining customer relationships. Previously, Ben was a top sales performer at Sourcebits, earning new business by recommending solutions and mobile strategy to customers. He was the Global Operations Manager and the first non-engineering hire at CloudCrowd, a crowdsourcing marketplace. Before Cloud Crowd, Ben founded a social-note sharing startup. Ben has a B.S. in Business Management from Cornell University.">
+              <img src="/img/pc/ben.png" alt="Ben Obear"/>
+              <h4>Ben Obear</h4>
+              <p>Co-founder, Director of Business Development</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-largesrc="/img/pc/ravi.jpg" data-title="Ravindra Kanchikare" data-description="Ravindra heads Design and frontend development team at cognitive clouds. He has 11 years of experience in designing and developing products for custumers. He worked in companies like, Wipro, Charls Schwab, Cisco, Sourcebits at lead possitions. Ravindra holds engineering degree from VTU.">
+              <img src="/img/pc/ravi.jpg" alt="Ravindra Kanchikare"/>
+              <h4>Ravindra Kanchikare</h4>
+              <p>Co-founder, Director of Design & Development</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-largesrc="/img/pc/sandeep.jpg" data-title="Sandeep Ravichandran" data-description="Sandeep has been writing code since the age of 8, starting with Logo on an 80386. He has worked with C++, Ruby on Rails, Scala and other languages. He is a contributor to the Rails Framework and has been successfully shipping applications to production since 2010. Sandeep has worked with TrueSparrow Systems (acquired by Fab.com), went on to become the Technical Lead at Sourcebits and is now heading the Engineering team at CognitiveClouds. He enjoys decoupling larger systems into small individual, manageable components. Sandeep has a degree from BITS, Pilani - Goa.">
+              <img src="/img/pc/sandeep.jpg" alt="Sandeep Ravichandran"/>
+              <h4>Sandeep Ravichandran</h4>
+              <p>Co-founder, Director of Engineering</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-largesrc="/img/pc/amit.jpg" data-title="Amit Bhagat" data-description="Amit looks after the digital marketing at CognitiveClouds. His inbound marketing methodologies reflect an integrated mix of communications strategies and tactics with blogs, social media networks, social bookmarking, discussion groups and forums to drive brand awareness, online engagement, expand market share, and traffic to our website. Amit holds an engineering degree from NIT Jamshedpur and MBA from SRCC, Delhi.">
+              <img src="/img/pc/amit.jpg" alt="Amit Bhagat"/>
+              <h4>Amit Bhagat</h4>
+              <p>Director, Marketing</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-largesrc="/img/pc/srini.jpg" data-title="Sriniketan" data-description="10 Years of experience in the Industry and worked for Tyco International, Volvo India Private Limited. Implementation of SAP R/3 two cycles and key user. Chief responsibilities are Financial accounting, compliance and Business Planning.Travelled globally understanding different cultures. Learning curve on leadership Integrity, Honesty and values are my core strengths">
+              <img src="/img/pc/srini.jpg" alt="Sriniketan"/>
+              <h4>Sriniketan</h4>
+              <p>Chief Financial Officer</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bar with contact details only. -->
+  </div>
+  <div id="push"></div>
+</div>
+
+</div>
+<div id="footer">
+  <div class="container clearfix">
+    <p class="copyright pull-left">&copy; 2013 cognitiveclouds &nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <ul class="home-social list-unstyled list-inline  pull-right visible-desktop">
+      <li>
+      <a href="http://twitter.com/cognitiveclouds" class="twitter"></a>
+      </li>
+      <li>
+      <a href="http://www.facebook.com/pages/Cognitiveclouds/558720034161747" class="facebook"></a>
+      </li>
+      <li>
+      <a href="/contact/" class="mail"></a>
+      </li>
+      <li>
+      <a href="https://plus.google.com/115997875526538959467" rel="publisher" class="plus"></a>
+      </li>
+    </ul>
+    <ul class="list-unstyled list-inline pull-left visible-desktop">
+      <li><a href="/careers/">Careers</a>
+      </li>&nbsp;&nbsp;
+      <li><a href="/privacy/">Privacy</a>
+      </li>&nbsp;&nbsp;
+      <li><a href="/contact/">Contact</a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+<!-- <script src="/js/application-23a32f0a.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/js/grid.js"></script>
+    <script>
+      $(function() {
+        Grid.init();
+      });
+    </script>
+</body>
+</html>

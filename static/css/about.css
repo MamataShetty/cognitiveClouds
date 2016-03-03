@@ -1,0 +1,219 @@
+#page-content.about-us .hero{
+	background-color: #000;
+	background-image: url("../img/about-us/aboutus.jpg");
+}
+#page-content.about-us .hero:before{
+	background: rgba(0,0,0,0.25);
+}
+.about-us .product-innovator{
+	background-image: url("../img/about-us/mission.png");
+}
+.about-us .dark-filter{
+}
+.leader #carousel .container{
+	min-height: 550px;
+}
+.leader .author h3{
+	font-size: 20px;
+}
+.about-info .row{
+	padding-top:50px;
+	padding-bottom: 50px;
+}
+
+.about-info h2{
+	margin: 0 auto ;
+    font-size: 44px;
+    letter-spacing: -.5px;
+    text-align: left;
+    color: #3E586B;
+    font-family: "FoundersGrotesk-Bold", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+.about-info p{
+	font-size: 16px;
+    line-height: 33px;
+}
+.paragraph{
+    line-height: 33px;
+    font-size: 20px;
+    margin: 0 auto 20px;
+    max-width: 1020px;
+}
+.paragraph:last-child{
+	margin-bottom: 0;
+}
+.about-info {
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+.about-info li.value {x
+    display: inline-block; 
+    vertical-align: middle; 
+    width: 100%;
+}
+.about-info li.value .content {
+    vertical-align: middle;
+    text-align: left;
+    color: #283D4D;
+    padding: 50px 30px;
+    transition: width .5s;
+    position: relative;
+
+}
+.about-info li.value .placeholder-image {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    transition: width .5s;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #D6D6D6;
+}
+.about-info li.value.we-do .placeholder-image{
+    background-image: url("../img/about-us/what.jpg");
+    background-position: center;
+}
+.about-info li.value.how-we-do .placeholder-image{
+    background-image: url("../img/about-us/how-we-do-it.jpg");
+    background-position: center;
+}
+.about-info li.value.partner .placeholder-image{
+    background-image: url("../img/about-us/partner.jpg");
+    background-position: center;
+}
+section.success{
+	background-image: url("../img/about-us/succes.jpg");
+    color: #fff;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+.success .tagline,section.success p{
+	color: #fff;
+	text-align: left;
+}
+.progessive-design figure
+{
+	text-align: center;
+}
+.progessive-design img{
+    height: 180px;
+    width: 180px;
+    margin: 0 auto;
+}
+.progessive-design .thumbnail h3{
+	    text-transform: none;
+    text-align: left;
+    color: #3E586B;
+    margin: 20px auto;
+    font-family: "Graphik-Regular", "Helvetica", Arial, sans-serif;
+    font-size: 23px;
+}
+.progessive-design .thumbnail p{
+    font-size: 16px;
+    line-height: 30px;
+}
+.progessive-design .row{
+	margin-top: 50px;
+}
+.home .progessive-design a.view-case-sudy-link{
+	font-size: 16px;
+}
+
+/* custom banner images*/
+
+#page-content.about-us.startUp .hero{
+	background-image: url("../img/portfolio/startup.jpg");
+    height: 600px;
+}
+#page-content.about-us.midSize .hero{
+	background-image: url("../img/portfolio/midsize.jpg");
+    height: 600px;
+}
+#page-content.about-us.enterprise .hero{
+	background-image: url("../img/portfolio/enterprise.jpg");
+    height: 600px;
+}
+#page-content.about-us.startUp .hero:before,#page-content.about-us.midSize .hero:before,#page-content.about-us.enterprise .hero:before,#page-content.home.momentum .hero:before{
+	content: none;
+}
+.startUp .tagline,.midSize .tagline,.enterprise .tagline{
+	color:#fff;
+}
+#page-content.home.momentum .hero{
+	background-image: url("../img/process/momentum.jpg");
+	height: 600px;
+	background-color: #999;
+}
+
+@media(min-width: 1200px){
+	.optimize-success .container{
+		max-width: 1020px;
+	}
+	#page-wrap  .progessive-design .container{
+		max-width: 980px;
+	}
+}
+
+@media screen and (min-width: 980px){
+	.about-info li.value {
+    width: 100%;
+    float: none;
+    display: -webkit-flex;
+    display: flex; 
+	}
+	.about-info li.value .content {
+	    width: 35%;
+	    display: inline-block;
+	    float: none;
+	    padding: 0;
+	    order: 1;
+	}
+	.about-info li.value .placeholder-image {
+	    width: 65%;
+	    min-height: 500px;
+	    display: inline-block;
+	    float: none;
+	    background-size: cover;
+	    background-position: top center;
+	    background-repeat: no-repeat;
+	}
+	li.value:nth-child(odd) .placeholder-image {
+	    -webkit-order: 2;
+	    order: 2; 
+	}
+	.text-vertical {
+	    display: inline-block;
+	    position: absolute;
+	    width: 70%;
+	    top: 50%;
+	    left: 50%;
+	    -webkit-transform: translate(-50%,-50%);
+	    transform: translate(-50%,-50%);
+	}
+
+}
+@media (min-width: 980px) and (max-width: 1200px){
+	.about-info p{
+		display: block;
+	    display: -webkit-box;
+	    max-width: 400px;
+	    height: 273px;
+	    -webkit-line-clamp: 8;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;
+	    text-overflow: ellipsis
+	}
+}
+@media(max-width: 780px){
+	section.success {
+	    background: #5692e1;
+	    background: linear-gradient(to bottom, #5692e1 0%, #76a0d9 100%);
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5692e1', endColorstr='#76a0d9',GradientType=0 );
+	}
+}
