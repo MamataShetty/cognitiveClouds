@@ -89,7 +89,7 @@
     width: 100%;
 }
 .tagline{
-    font-size: 30px;
+    font-size: 29px;
     max-width: 1020px;
     padding:0;
     margin: 0 auto 40px;
@@ -823,17 +823,32 @@ label.attach-file{
     .home .work .carousel .item{
         min-height: auto;
     }
+    .product-innovator p{
+        font-size: 16px;
+    
+    }
+    .hero .tagline{
+        line-height: 25px;
+    }
     .work .tagline{
         font-size: 35px;
     }
     .values .items{
         text-align: center;
     }
+    .clent-list .active-tumbnial img{
+        width: 100px;
+        height: 100px;
+    }
+    .clent-list .face-overlay,.hidden-xs,.custom-carousel .carousel-control span{
+        display: none;
+    }
     .values .items .item {
         display: inline-block;
         position: relative;
         top: 0;
         text-align: left;
+        width: 100%;
     }
     .list-grid li {
         width: 50%; 
@@ -847,16 +862,15 @@ label.attach-file{
     }
     footer .address{
         width: auto;
-        margin-left: 25px;
+        margin-left: 10px;
+    }
+    footer .col-lg-8{
+        padding: 0;
     }
     #contactUs.modal{
         width: 100%;
     }
     footer .container{
        max-width: 100%;
-    }
-    .copyright-content .col-span-4,.copyright-content .col-span-8{
-        width: 50%;
-        float: left;
     }
 }
